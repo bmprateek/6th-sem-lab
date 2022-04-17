@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New" ;
+}
+.left-sec{
+    float: left;
+    width: 20vw;
+    border-right: rgba(128, 128, 128, 0.582) 2px solid ;
+    padding-left: 40px;
+    margin-right: 60px;
+}
+h3{
+     color:rgba(34, 46, 70,1);
+}
+h5{
+    margin: 0px !important;
+}
+a{
+    display: inline-block;
+    width: 130px !important;
+    color: rgba(0, 0, 0, 0.712);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.829);
+}
+
+ul{
+    list-style: square;
+}
+
+.head{
+    margin-top: 0px ;
+    background-color: #ffcccc;
+    color: rgba(34, 46, 70,1);
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 10vh;
+   
+}
+
+p, ul{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.712);
+}
+p{
+    font-size: 14px;
+}
+
+
+
+
