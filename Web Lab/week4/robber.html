@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Robber L</title>
+    </head>
+    <body>
+        <script>
+            function robber(text)
+            {  var newText = "";
+                
+             text.forEach(element => {
+                var a = false;
+                switch(c)
+               {
+                   case 'a':
+                   case 'e': 
+                   case 'i': 
+                   case 'o': 
+                   case 'u': a = true;
+                   break;
+
+
+               }
+               if(!a)
+               {
+                    newText = newText + letter + 'o' + letter;
+               }
+               else
+               {
+                   newText= newText + letter;
+               }
+             });
+         
+
+               return newText;
+            }
+            var text = prompt("Enter Text");
+           
+            var  r = robber(Text);
+            document.writeln("Translating to robbers lang.....")
+            document.writeln( r);
+        </script>
+    </body>
+</html>
