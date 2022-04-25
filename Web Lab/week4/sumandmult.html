@@ -1,0 +1,25 @@
+
+<!doctype html>  
+<head>  
+<meta charset="utf-8">  
+<title>Sum and Mult</title>
+<script>
+    var sum=0,mul=1;    
+    function sums(a){
+         sum+=parseInt(a);
+    }
+    function muls(a){
+         mul*=parseInt(a);
+    }
+    var str;
+    str=prompt("Enter a list of nums separated by spaces: ");
+    const myArray = str.split(" ");
+    myArray.forEach(sums);
+    myArray.forEach(muls);
+    document.writeln("The sum is "+sum+"<br>The product is "+mul);  
+</script>
+</head>  
+<body> 
+
+</body>
+</html>

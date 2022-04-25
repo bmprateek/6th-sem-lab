@@ -1,0 +1,27 @@
+<!doctype html>  
+<head>  
+<meta charset="utf-8">  
+<title>Bilingual</title>
+<script>    
+    function translate(str) {
+            var lexicon = { "merry": "god", "christmas": "jul", "and": "och", 
+                            "happy": "gott", "new": "nytt", "year": "år" };
+            var q = "";
+            str=str.toLowerCase()
+            str=str.split(" ");
+            for(var i=0;i<str.length;i++){
+                q+=lexicon[str[i]] + ' ';
+            }
+            return q;
+        }
+
+
+    var phrase = "Merry Christmas and Happy New Year",
+    x = translate(phrase);
+    document.writeln("The verbing result is: "+x);  
+</script>
+</head>  
+<body> 
+
+</body>
+</html>

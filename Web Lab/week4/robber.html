@@ -1,0 +1,26 @@
+
+<!doctype html>  
+<head>  
+<meta charset="utf-8">  
+<title>Robber</title>
+<script>    
+    function vow_or_not(a){
+        return (a=='a' || a=='e' || a=='i' || a=='o' || a=='u');  
+    }
+    var str;
+    str=prompt("Enter a string: ");
+    var str1 = "";
+    for (var i = 0; i < str.length; i++) {
+        var a = str.charAt(i);
+        str1+=a;
+        if(vow_or_not(a)){
+            str1+=('o'+a);
+        }
+    }
+    document.writeln(str1);  
+</script>
+</head>  
+<body> 
+
+</body>
+</html>
