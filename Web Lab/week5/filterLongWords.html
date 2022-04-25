@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            filterLongWords
+        </title>
+        <script>
+            function filterLongWords(array, int){
+  var length = array.length;
+  var longestWords = [];
+  for (i = 0; i < length; i++) {
+    if (array[i].length > int) {
+      longestWords[longestWords.length] = array[i];
+    }
+  }
+  return longestWords;
+}
+str=prompt("Enter a words seperated by spaces: ");
+myArray = str.split(" ");
+var len = intParse(prompt("Enter length"));
+myArray = filterLongWords(myArray , len);
+str = myArray.toString();
+document.writeln("words are" )
+        </script>
+    </head>
+</html>
