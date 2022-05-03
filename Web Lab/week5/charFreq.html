@@ -1,0 +1,28 @@
+<!doctype html>  
+<head>  
+<meta charset="utf-8">  
+<title>My Blog</title>
+<script>
+    function charFreq(b){
+        const obj={};
+        for(let a=0;a<b.length;a++){
+            if(obj.hasOwnProperty(b[a])){
+                obj[b[a]]=obj[b[a]]+1;
+            }else{
+                obj[b[a]]=1;
+            }
+        }
+        for(var key in obj){
+            document.writeln(key+"---"+obj[key]+"<br>")
+        }
+    }
+    var str;
+    str=prompt("Enter a string ");
+    document.writeln("The character frequency of the string are: <br>");
+    charFreq(str);
+</script>
+</head>  
+<body> 
+
+</body>
+</html>
