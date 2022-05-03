@@ -1,25 +1,23 @@
-<html>
-    <head>
-        <title>
-            filterLongWords
-        </title>
-        <script>
-            function filterLongWords(array, int){
-  var length = array.length;
-  var longestWords = [];
-  for (i = 0; i < length; i++) {
-    if (array[i].length > int) {
-      longestWords[longestWords.length] = array[i];
+	<!doctype html>  
+<head>  
+<meta charset="utf-8">  
+<title>My Blog</title>
+<script>
+    function findLongestWord(arr,n){
+        for(var a=0;a<arr.length;a++){
+            if(n<arr[a].length){
+                document.writeln(arr[a]+"<br>");
+            }
+        }
     }
-  }
-  return longestWords;
-}
-str=prompt("Enter a words seperated by spaces: ");
-myArray = str.split(" ");
-var len = intParse(prompt("Enter length"));
-myArray = filterLongWords(myArray , len);
-str = myArray.toString();
-document.writeln("words are" )
-        </script>
-    </head>
+    var arr,n;
+    arr=prompt("Enter a list of words separated by spaces: ").split(" ");
+    n=parseInt(prompt("Enter a length: "));
+    document.writeln("The list of the longer words are: <br>");
+    findLongestWord(arr,n);
+</script>
+</head>  
+<body> 
+
+</body>
 </html>
