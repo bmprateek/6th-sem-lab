@@ -1,0 +1,33 @@
+	<!doctype html>  
+<head>  
+<meta charset="utf-8">  
+<title>My Blog</title>
+<script>    
+    var choices = ['COD', 'CSGO', 'GTA5', 'DOTA'];
+        for (var i = 0; i < choices.length; i++) {
+            document.writeln('My #' + (i + 1) + ' choice is ' 
+                        + choices[i]+"<br>");
+        }
+        document.writeln("<br><br>")
+        for (var i = 0; i < choices.length; i++) {
+            var choiceNum = i + 1;
+            var choiceNumSuffix;
+            if (choiceNum == 1) {
+                choiceNumSuffix = 'st';
+            } else if (choiceNum == 2) {
+                choiceNumSuffix = 'nd';
+            } else if (choiceNum == 3) {
+                choiceNumSuffix = 'rd';
+            } else {
+                choiceNumSuffix = 'th';
+            }
+            console.log();
+            document.writeln('My ' + choiceNum + choiceNumSuffix + ' choice is ' 
+                            + choices[i]+"<br>");
+        }
+</script>
+</head>  
+<body> 
+
+</body>
+</html>
