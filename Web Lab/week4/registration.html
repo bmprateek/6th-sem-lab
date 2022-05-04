@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    function validate(){
+        var username = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        var compass = document.getElementById("compass").value;
+        var consent = document.getElementById("consent").value;
+        var year = parseInt(document.getElementById("dob").value);
+        var input = document.getElementById('email');
+        if(username.length==0 || pass.length==0 || compass.length==0 ||
+            consent.length==0){
+                alert("The compulsory fields are empty");
+                return false;
+            }
+        if(pass!=compass){
+            alert("The password fields dont match");
+            return false;
+        }
+        var validRegex= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if(!(input.value.match(validRegex))){
+            alert("Invalid email address");
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name='info' method="POST" onsubmit="return validate(this)">
+        Name:<input type='text' id='name'><br>
+        Username<input type='text' id='username'><br>
+        Password:<input type='password' id='password'><br>
+        Confirm password:<input type='password' id='compass'><br>
+        Year of Birth:<input type='text' id='dob'><br>
+        Email:<input type='text' id='email'><br>
+        Agree to the terms and conditions of the website:<br> 
+        <input type="checkbox" id="consent"><br>
+        <input type="submit" value="submit"><br>
+    </form>
+</body>
+</html>
