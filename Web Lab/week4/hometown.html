@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function query()
+            {
+                var hometown = document.getElementById("home").value;
+                var age = parseInt(document.getElementById("age").value);
+                document.getElementById('printage').innerHTML = age + " "+"dob: "+(2022-age);
+                document.getElementById('print').innerHTML = "<a href = 'https://en.wikipedia.org/wiki/'+hometown "+"</a>";
+                // document.getElementById('print2').innerHTML = 
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <form name = "search" method = "post" onsubmit="return query(this);">
+        Enter name: <input type = "text" id = "name"> </form> </br>
+        Enter age: <input type = "text" id= "age" > </br>
+        Enter hometown: <input type = "text" id = "home" > </br>
+        <input type = "submit" value = "submit">
+
+        </form>
+        <p id = "printage" > </p>
+        <p id = "print" > </p>
+        <p id = "print2" > </p>
+    </body>
+</html>
