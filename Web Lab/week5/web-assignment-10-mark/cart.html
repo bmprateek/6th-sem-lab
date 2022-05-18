@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <title> Cart </title>
+    <link rel="stylesheet" href="style.css">
+      <script type="text/javascript" charset="UTF-8" >
+    
+        var updateClickCount = (function(){
+            var price  = 100;
+            var quantity = 0;
+            return function(){
+                ++quantity;
+                document.getElementsByClassName("cdf")[0].innerHTML = price*quantity;
+                document.getElementsByClassName("abc")[0].innerHTML = quantity;
+            }
+        })();    
+      </script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    
+    <body class = "cart-body">
+      <nav >
+      <label class = "navbar-label"> Cart  </label>
+    
+      </nav>
+      <br>
+      <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    
+                </div>
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <span class="cart-item cart-column">Burger &emsp;<button onclick="updateClickCount()" class="btn btn-primary btn-add">ADD</button></span> </span>
+                        <span class="cart-price cart-column cdf">0</span>
+                        <span class="cart-quantity cart-column abc">0</span>
+                    </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                <script>
+                  
+                </script>
+              </body>
+    </html>
