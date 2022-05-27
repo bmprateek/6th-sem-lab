@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> hello</title>
+    </head>
+    <body>
+        <script>
+            function math()
+            {
+                this.number = 10;
+            }
+
+            math.prototype.square = function()
+            {
+                var number = this.number * this.number;
+                return number;
+            };
+            math.prototype.cube = function()
+            {
+                var number = this.number * this.number * this.number;
+                return number;
+            };
+            math.prototype.sqrt = function()
+            {
+                var number = Math.sqrt(this.number);
+               return number;
+            };
+
+            var mathObj = new math();
+            document.writeln(mathObj.square());
+            document.writeln(mathObj.cube());
+            document.writeln(mathObj.sqrt());
+        </script>
+    </body>
+</html>
