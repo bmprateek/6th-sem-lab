@@ -1,0 +1,37 @@
+<html>
+    <head>
+<title> shape</title>
+    </head>
+    <body>
+<script>
+function Shape() {
+    this.type = "shape";
+    this.getType = function(){
+        return this.type;
+    }
+}
+
+function Triangle(a,b,c){
+     this.type="triangle";
+     this.a =a;
+     this.b = b;
+     this.c = c;
+}
+
+var shape = new Shape(); //follow the requirements a bit more literally :)
+Triangle.prototype = shape;
+
+Triangle.prototype.getPerimeter = function() {
+  return this.a + this.b + this.c;
+}
+var t = new Triangle(1 , 2 ,3);
+
+console.log(t.constructor === Triangle);
+console.log(shape.isPrototypeOf(t));
+console.log(t.getPerimeter());
+console.log(t.getType());
+
+
+</script>
+    </body>
+</html>
