@@ -1,29 +1,32 @@
 <html>
-    <head>
-<title> Palindrome</title>
-    </head>
-    <body>
-<script>
-    
-    Array.prototype.toPalindrome = function()
-{   n = this.length;
-    var  arr1 = this;
-    var arr2 = [];
-    for(var i=0; i<n; i++){
-        arr2[i] = arr1[i];
-    }
-    for(var j = n-2; j>=0; j--){
-        arr2.push(arr2[j]);
-    }
-        return arr2;
-}
-const  arr = [1 , 2 , 3 ];
-const arr2 = arr.toPalindrome();
-const arr3 = arr2.toPalindrome();
-console.log(arr , arr2 , arr3);
+
+<head>
+    <title> Palindrome</title>
+</head>
+
+<body>
+    <script>
+
+        Array.prototype.toPalindrome = function () {
+            n = this.length;
+
+            var arr1 = [];
+            for (var i = 0; i < n; i++) {
+                arr1[i] = this[i];
+            }
+            for (var j = n - 2; j >= 0; j--) {
+                arr1.push(arr1[j]);
+            }
+            return arr1;
+        }
+        const arr = [1, 2, 3];
+        const arr2 = arr.toPalindrome();
+        const arr3 = arr2.toPalindrome();
+        console.log(arr, arr2, arr3);
 
 
 
-</script>
-    </body>
+    </script>
+</body>
+
 </html>
