@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>vehicle</title>
+    </head>
+    <body>
+        <script>
+            function Vehicle(a , b , c)
+            {
+                this.type = a;
+                this.year = b;
+                this.vin =c;
+
+            };
+            function Fleet()
+            {
+                this.fleetOfVehicles = [new Vehicle('car' , '2015' , 'KA04ML653'),
+                new Vehicle('bike' , '2015' , 'KA04ML654'),
+                new Vehicle('bus' , '2015' , 'KA04ML655')];
+
+            };
+            var fleet = new Fleet();
+            console.log(fleet.fleetOfVehicles);
+        </script>
+    </body>
+</html>
