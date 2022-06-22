@@ -1,0 +1,15 @@
+import RPi_GPO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(13 , GPIO.OUT)
+num = int(input("Enter a number"))
+if(num==1):
+	GPIO.output(13 , GPIO.high)
+	time.sleep(1)
+	while(true):
+		num1=int(input())
+		if(num1==0):
+			GPIO.out(13 , GPIO.low)
+			break
+GPIO.cleanup()

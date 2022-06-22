@@ -1,0 +1,10 @@
+proj.o: proj.c
+proj.o: NUC1xx.h
+proj.o: ..\..\..\CoreSupport\core_cm0.h
+proj.o: d:\Keil\ARM\RV31\Inc\stdint.h
+proj.o: system_NUC1xx.h
+proj.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\System\SysInfra.h
+proj.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\System\ModuleID.h
+proj.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\Driver\DrvSYS.h
+proj.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+proj.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\Driver\DrvGPIO.h

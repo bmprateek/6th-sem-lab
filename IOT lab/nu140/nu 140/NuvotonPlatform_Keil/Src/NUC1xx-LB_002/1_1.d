@@ -1,0 +1,11 @@
+1_1.o: ..\..\Sample\EduSampleCode\1_1.c
+1_1.o: d:\Keil\ARM\RV31\Inc\stdio.h
+1_1.o: d:\Keil\ARM\RV31\Inc\string.h
+1_1.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+1_1.o: ..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+1_1.o: d:\Keil\ARM\RV31\Inc\stdint.h
+1_1.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+1_1.o: ..\..\Include\System\SysInfra.h
+1_1.o: ..\..\Include\System\ModuleID.h
+1_1.o: ..\..\Include\NUC1xx-LB_002\LCD_Driver.h
+1_1.o: ..\..\Include\Driver\DrvRTC.h

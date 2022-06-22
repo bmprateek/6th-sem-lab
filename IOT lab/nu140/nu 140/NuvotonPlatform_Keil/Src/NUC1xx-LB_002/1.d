@@ -1,0 +1,12 @@
+1.o: 1.c
+1.o: d:\Keil\ARM\RV31\Inc\stdio.h
+1.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+1.o: ..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+1.o: d:\Keil\ARM\RV31\Inc\stdint.h
+1.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+1.o: ..\..\Include\System\SysInfra.h
+1.o: ..\..\Include\System\ModuleID.h
+1.o: ..\..\Include\Driver\DrvSYS.h
+1.o: ..\..\Include\Driver\DrvPWM.h
+1.o: ..\..\Include\Driver\DrvADC.h
+1.o: ..\..\Include\NUC1xx-LB_002\LCD_Driver.h

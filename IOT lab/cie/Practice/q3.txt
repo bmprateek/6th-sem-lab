@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include "NUC1xx.h"
+#include "DrvADC.h"
+#include "DrvSYS.h"
+#include "DrvGPIO.h"
+#include "NUC1xx-LB_002\LCD_Driver.h"
+int32_t main(void)
+{
+char adc_value[15] = "ADC value:";
+UNLOCKREG();
+SYSCLK->PWRCON.XTL12M_EN = 1;
+ SYSCLK->CLKSEL0.HCLK_S = 0;
+LOCKREG();
+
+InitPWM();
+InitADC();
+
+Initial_panel(void);
+clr_all_panel(void);
+while(1)
+{
+while(!DrvADC_IsConversionDone());
+ADC->ADSR.ADF =1;
+PWMA->CMR0 = ADC->ADDR[7].RSLT <<4;
+Show_Word(0, 11 , "");
+Show_Word(0, 12 , "");
+Show_Word(0, 13 , "");
+Show_Word(0, 14 , "");
+sprintf(adc_value + 4 , "%d" , ADC->ADDR[7].RSLT)
+DrvSYS_Delay(10000);
+ADC->ADCR.ADST=1;
+}
+}

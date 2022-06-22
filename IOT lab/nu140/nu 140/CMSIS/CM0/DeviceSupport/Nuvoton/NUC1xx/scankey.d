@@ -1,0 +1,10 @@
+scankey.o: ..\..\..\..\..\NuvotonPlatform_Keil\Src\NUC1xx-LB_002\ScanKey.c
+scankey.o: d:\Keil\ARM\RV31\Inc\stdio.h
+scankey.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\Driver\DrvGPIO.h
+scankey.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+scankey.o: ..\..\..\CoreSupport\core_cm0.h
+scankey.o: d:\Keil\ARM\RV31\Inc\stdint.h
+scankey.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+scankey.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\System\SysInfra.h
+scankey.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\System\ModuleID.h
+scankey.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\NUC1xx-LB_002\ScanKey.h

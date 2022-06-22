@@ -1,0 +1,9 @@
+drvadc.o: ..\..\..\..\..\NuvotonPlatform_Keil\Src\Driver\DrvADC.c
+drvadc.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+drvadc.o: ..\..\..\CoreSupport\core_cm0.h
+drvadc.o: d:\Keil\ARM\RV31\Inc\stdint.h
+drvadc.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+drvadc.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\System\SysInfra.h
+drvadc.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\System\ModuleID.h
+drvadc.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\Driver\DrvADC.h
+drvadc.o: ..\..\..\..\..\NuvotonPlatform_Keil\Include\Driver\DrvSYS.h

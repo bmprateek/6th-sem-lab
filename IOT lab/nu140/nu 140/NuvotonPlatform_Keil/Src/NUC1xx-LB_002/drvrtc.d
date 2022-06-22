@@ -1,0 +1,10 @@
+drvrtc.o: ..\Driver\DrvRTC.c
+drvrtc.o: d:\Keil\ARM\RV31\Inc\stdio.h
+drvrtc.o: ..\..\Include\Driver\DrvRTC.h
+drvrtc.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+drvrtc.o: ..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+drvrtc.o: d:\Keil\ARM\RV31\Inc\stdint.h
+drvrtc.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+drvrtc.o: ..\..\Include\System\SysInfra.h
+drvrtc.o: ..\..\Include\System\ModuleID.h
+drvrtc.o: ..\..\Include\Driver\DrvGPIO.h

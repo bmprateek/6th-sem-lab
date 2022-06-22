@@ -1,0 +1,11 @@
+lcd_driver.o: LCD_Driver.c
+lcd_driver.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\NUC1xx.h
+lcd_driver.o: ..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+lcd_driver.o: d:\Keil\ARM\RV31\Inc\stdint.h
+lcd_driver.o: d:\Keil\ARM\Inc\Nuvoton\NUC1xx\system_NUC1xx.h
+lcd_driver.o: ..\..\Include\System\SysInfra.h
+lcd_driver.o: ..\..\Include\System\ModuleID.h
+lcd_driver.o: ..\..\Include\Driver\DrvSYS.h
+lcd_driver.o: ..\..\Include\Driver\DrvSPI.h
+lcd_driver.o: ..\..\Include\Driver\DrvGPIO.h
+lcd_driver.o: ..\..\Include\NUC1xx-LB_002\LCD_Driver.h
