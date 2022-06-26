@@ -22,6 +22,7 @@ int main(){
 			printf("%s\n" , line);
 		if(strstr(line , "/*") && open==0){
 		open =1 ;
+		close =0;
 		openlineno = lineno;
 		printf("%s\n", line);
 		comment =1;
@@ -34,7 +35,7 @@ int main(){
 
 		}
 
-	
+}	
 	if(open==1&&close==0)
 	{ 
 		printf("\n Unterminated comment in begin in line no %d. It Has to be closed",openlineno); 
@@ -44,6 +45,6 @@ int main(){
 	{ 
 		printf("\n Comment usage in line %d is validated!",lineno);
 	} 
-}
+
 	return 0;
 }
