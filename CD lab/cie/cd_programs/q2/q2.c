@@ -35,7 +35,7 @@ int main(){
 
 		}
 
-}	
+	}	
 	if(open==1&&close==0)
 	{ 
 		printf("\n Unterminated comment in begin in line no %d. It Has to be closed",openlineno); 
