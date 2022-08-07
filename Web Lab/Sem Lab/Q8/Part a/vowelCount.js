@@ -1,6 +1,10 @@
+//npm init to add package.json
+
 // In the exam set this file name for npm start script in package.json  
 
 // eg : "start": "node vowelCount.js"
+
+// terminal do npm start
 
 
 
