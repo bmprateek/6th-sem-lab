@@ -1,0 +1,8 @@
+#include <stdio.h>
+ #include <conio.h>
+/*char c[10]="msrit",f[]="lk;*/ 
+strlen("hjkl);
+ /*dgdfgdfg*/ 
+a=a+b; 
+/* fsdgdgds sdgfsd sdfsdf 
+}
