@@ -665,13 +665,13 @@ int32_t DrvGPIO_GetDebounceSampleCycle(void)
 /*                  it's meaning the interrupt function enable by rising egde/high level,                  */ 
 /*                  falling edge/low level or both riging edge and falling egde.                           */
 /*                  If the interrupt mode is E_MODE_LEVEL and interrupt type is                            */
-/*                  E_BOTH_EDGE¡Athen calling this API is ignored.                                     	   */
+/*                  E_BOTH_EDGEï¿½Athen calling this API is ignored.                                     	   */
 /*	            Mode - [in]                                                                                */
 /*                  E_DRVGPIO_INT_MODE, specify the interrupt mode.                                        */
 /*                  It could be E_MODE_EDGE or E_MODE_LEVEL to control the interrupt is by                 */
 /*                	edge trigger or by level trigger.                                                      */
 /*                  If the interrupt mode is E_MODE_LEVEL and interrupt type is                            */
-/*                  E_BOTH_EDGE¡Athen calling this API is ignored.                                         */
+/*                  E_BOTH_EDGEï¿½Athen calling this API is ignored.                                         */
 /* Returns:                                                                                                */
 /*              E_SUCCESS										Operation successful                       */
 /*              E_DRVGPIO_ARGUMENT								Incorrect argument                         */
@@ -792,13 +792,13 @@ void DrvGPIO_SetIntCallback(GPIO_GPAB_CALLBACK pfGPABCallback, GPIO_GPCDE_CALLBA
 /*                  it's meaning the interrupt function enable by rising egde/high level,                  */ 
 /*                  falling edge/low level or both riging edge and falling egde.                           */
 /*                  If the interrupt mode is E_MODE_LEVEL and interrupt type is                            */
-/*                  E_BOTH_EDGE¡Athen calling this API is ignored.                                     	   */
+/*                  E_BOTH_EDGEï¿½Athen calling this API is ignored.                                     	   */
 /*	            Mode - [in]                                                                                */
 /*                  E_DRVGPIO_INT_MODE, specify the interrupt mode.                                        */
 /*                  It could be E_MODE_EDGE or E_MODE_LEVEL to control the interrupt is by                 */
 /*                	edge trigger or by level trigger.                                                      */
 /*                  If the interrupt mode is E_MODE_LEVEL and interrupt type is                            */
-/*                  E_BOTH_EDGE¡Athen calling this API is ignored.                                         */
+/*                  E_BOTH_EDGEï¿½Athen calling this API is ignored.                                         */
 /*	            pfEINT0Callback - [in]                                                                     */
 /*                  It's the function pointer of the external INT0 callback function.                      */
 /* Returns:                                                                                                */
@@ -871,13 +871,13 @@ void DrvGPIO_DisableEINT0(void)
 /*                  it's meaning the interrupt function enable by rising egde/high level,                  */ 
 /*                  falling edge/low level or both riging edge and falling egde.                           */
 /*                  If the interrupt mode is E_MODE_LEVEL and interrupt type is                            */
-/*                  E_BOTH_EDGE¡Athen calling this API is ignored.                                     	   */
+/*                  E_BOTH_EDGEï¿½Athen calling this API is ignored.                                     	   */
 /*	            Mode - [in]                                                                                */
 /*                  E_DRVGPIO_INT_MODE, specify the interrupt mode.                                        */
 /*                  It could be E_MODE_EDGE or E_MODE_LEVEL to control the interrupt is by                 */
 /*                	edge trigger or by level trigger.                                                      */
 /*                  If the interrupt mode is E_MODE_LEVEL and interrupt type is                            */
-/*                  E_BOTH_EDGE¡Athen calling this API is ignored.                                         */
+/*                  E_BOTH_EDGEï¿½Athen calling this API is ignored.                                         */
 /*	            pfEINT0Callback - [in]                                                                     */
 /*                  It's the function pointer of the external INT0 callback function.                      */
 /* Returns:                                                                                                */
