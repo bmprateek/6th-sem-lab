@@ -10,6 +10,6 @@ if(num==1):
 	while(true):
 		num1=int(input())
 		if(num1==0):
-			GPIO.out(13 , GPIO.low)
+			GPIO.output(13 , GPIO.low)
 			break
 GPIO.cleanup()
