@@ -5,11 +5,11 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(13 , GPIO.OUT)
 num = int(input("Enter a number"))
 if(num==1):
-	GPIO.output(13 , GPIO.high)
+	GPIO.output(13 , GPIO.HIGH)
 	time.sleep(1)
 	while(true):
 		num1=int(input())
 		if(num1==0):
-			GPIO.output(13 , GPIO.low)
+			GPIO.output(13 , GPIO.LOW)
 			break
 GPIO.cleanup()
